@@ -8,7 +8,7 @@
   --card: #f3f4f6;
   --card-foreground: #111827;
   --card-border: #e5e7eb;
-  --primary: #7a7fee;
+  --primary: #71717a;
   --primary-foreground: #ffffff;
   --secondary: #f3f4f6;
   --secondary-foreground: #111827;
@@ -18,7 +18,7 @@
   --accent-foreground: #111827;
   --border: #d1d5db;
   --input: #d1d5db;
-  --ring: #7a7fee;
+  --ring: #71717a;
   --radius: 0.75rem;
   --font-outfit: "Outfit", sans-serif;
 }
@@ -29,7 +29,7 @@
   --card: #272829;
   --card-foreground: #ffffff;
   --card-border: #1a1a1a;
-  --primary: #7a7fee;
+  --primary: #71717a;
   --primary-foreground: #ffffff;
   --secondary: #272829;
   --secondary-foreground: #ffffff;
@@ -39,7 +39,7 @@
   --accent-foreground: #ffffff;
   --border: #2a2a2a;
   --input: #2a2a2a;
-  --ring: #7a7fee;
+  --ring: #71717a;
 }
 
 @layer base {
@@ -71,6 +71,7 @@
     h1 {
       font-size: calc(40px + (60 - 40) * ((100vw - 768px) / (1440 - 768)));
     }
+
     h2 {
       font-size: calc(36px + (48 - 36) * ((100vw - 768px) / (1440 - 768)));
     }
@@ -80,6 +81,7 @@
     h1 {
       font-size: 40px;
     }
+
     h2 {
       font-size: 36px;
     }
@@ -121,7 +123,7 @@
   }
 
   .btn-primary {
-    background-color: #7a7fee;
+    background-color: #71717a;
     color: #ffffff;
     @apply px-6 py-2.5 rounded-md hover:bg-opacity-90 transition-all text-sm font-medium shadow-sm;
   }
@@ -137,12 +139,12 @@
   }
 
   .section-subtitle {
-    color: #7a7fee;
+    color: #71717a;
     @apply font-medium mb-6;
   }
 
   .accent-text {
-    color: #7a7fee;
+    color: #71717a;
   }
 
   /* Mobile menu styles */
@@ -215,7 +217,7 @@
   }
 
   .prose a {
-    @apply text-[#7A7FEE] hover:underline;
+    @apply text-[#71717a] hover:underline;
   }
 
   .prose strong {

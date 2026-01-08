@@ -54,7 +54,7 @@ export default function Faq() {
       <div className="card p-8 md:p-10 shadow-lg">
         <h2 className="text-black dark:text-white mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
           Frequently Asked
-          <span className="block text-[#7A7FEE] dark:text-[#7A7FEE]">Questions</span>
+          <span className="block text-[#71717A] dark:text-[#71717A]">Questions</span>
         </h2>
         <p className="mb-8 max-w-2xl text-gray-700 dark:text-gray-300">
           Have questions about our services? Find answers to the most common questions and learn how our team can
@@ -66,13 +66,13 @@ export default function Faq() {
             <div key={faq.id} className="border-b pb-4 border-gray-300 dark:border-gray-700">
               <button
                 onClick={() => toggleItem(faq.id)}
-                className="flex justify-between items-center w-full text-left py-2 font-medium text-black dark:text-white hover:text-[#7A7FEE] dark:hover:text-[#7A7FEE] transition-colors"
+                className="flex justify-between items-center w-full text-left py-2 font-medium text-black dark:text-white hover:text-[#71717A] dark:hover:text-[#71717A] transition-colors"
                 aria-expanded={openItem === faq.id}
                 aria-controls={`faq-answer-${faq.id}`}
               >
                 <span className="font-medium">{faq.question}</span>
                 <ChevronDown
-                  className={`w-5 h-5 transition-transform ${openItem === faq.id ? "rotate-180 text-[#7A7FEE]" : ""}`}
+                  className={`w-5 h-5 transition-transform ${openItem === faq.id ? "rotate-180 text-[#71717A]" : ""}`}
                 />
               </button>
               {openItem === faq.id && (

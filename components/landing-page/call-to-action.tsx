@@ -8,7 +8,7 @@ export default function CallToAction() {
         {/* Text content - takes full width on mobile */}
         <div className="w-full md:w-3/5 z-10">
           <h2 className="text-black dark:text-white mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
-            Your Next Big Idea <span className="text-[#7A7FEE] dark:text-[#7A7FEE]">Starts</span> Here
+            Your Next Big Idea <span className="text-[#71717A] dark:text-[#71717A]">Starts</span> Here
           </h2>
           <p className="my-6 text-sm md:text-base max-w-md text-gray-700 dark:text-gray-300">
             Have an idea or a problem that needs solving?

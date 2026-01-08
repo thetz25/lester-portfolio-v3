@@ -73,17 +73,9 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
       >
         <div className="sticky top-0 z-10 flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-[#111111]">
           <Link href="/" className="flex items-center" onClick={onClose}>
-            {mounted ? (
-              <Image
-                src={logoSrc || "/placeholder.svg"}
-                alt="Automatic Logo"
-                width={150}
-                height={40}
-                className="h-8 w-auto"
-              />
-            ) : (
-              <div className="h-8 w-[150px]" />
-            )}
+            <span className="text-xl font-bold text-black dark:text-white tracking-tight">
+              Lester<span className="text-[#71717A]">Borillo</span>
+            </span>
           </Link>
           <button
             onClick={onClose}
@@ -99,11 +91,10 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             <li>
               <Link
                 href="/"
-                className={`flex items-center py-3 px-4 rounded-lg text-base ${
-                  pathname === "/"
-                    ? "bg-[#7A7FEE]/10 text-[#7A7FEE]"
-                    : "text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
-                }`}
+                className={`flex items-center py-3 px-4 rounded-lg text-base ${pathname === "/"
+                  ? "bg-[#71717A]/10 text-[#71717A]"
+                  : "text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
+                  }`}
                 onClick={onClose}
               >
                 Home
@@ -114,11 +105,10 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             <li className="border-b border-gray-200 dark:border-gray-800 pb-1">
               <button
                 onClick={() => toggleDropdown("resources")}
-                className={`flex items-center justify-between w-full py-3 px-4 rounded-lg text-base ${
-                  pathname.startsWith("/resources")
-                    ? "bg-[#7A7FEE]/10 text-[#7A7FEE]"
-                    : "text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
-                }`}
+                className={`flex items-center justify-between w-full py-3 px-4 rounded-lg text-base ${pathname.startsWith("/resources")
+                  ? "bg-[#71717A]/10 text-[#71717A]"
+                  : "text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
+                  }`}
               >
                 <span>Resources</span>
                 <ChevronDown
@@ -141,9 +131,8 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                             rel="noopener noreferrer"
                           >
                             <div
-                              className={`flex-shrink-0 w-10 h-10 rounded-md flex items-center justify-center ${
-                                item.color || "bg-gray-100 dark:bg-gray-800"
-                              }`}
+                              className={`flex-shrink-0 w-10 h-10 rounded-md flex items-center justify-center ${item.color || "bg-gray-100 dark:bg-gray-800"
+                                }`}
                             >
                               {typeof item.icon === "string" ? (
                                 <Image
@@ -175,9 +164,8 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                             onClick={onClose}
                           >
                             <div
-                              className={`flex-shrink-0 w-10 h-10 rounded-md flex items-center justify-center ${
-                                item.color || "bg-gray-100 dark:bg-gray-800"
-                              }`}
+                              className={`flex-shrink-0 w-10 h-10 rounded-md flex items-center justify-center ${item.color || "bg-gray-100 dark:bg-gray-800"
+                                }`}
                             >
                               {typeof item.icon === "string" ? (
                                 <Image
@@ -209,11 +197,10 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             <li>
               <Link
                 href="/portfolio"
-                className={`flex items-center py-3 px-4 rounded-lg text-base ${
-                  pathname === "/portfolio"
-                    ? "bg-[#7A7FEE]/10 text-[#7A7FEE]"
-                    : "text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
-                }`}
+                className={`flex items-center py-3 px-4 rounded-lg text-base ${pathname === "/portfolio"
+                  ? "bg-[#71717A]/10 text-[#71717A]"
+                  : "text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
+                  }`}
                 onClick={onClose}
               >
                 Portfolio
@@ -223,11 +210,10 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             <li>
               <Link
                 href="/start"
-                className={`flex items-center py-3 px-4 rounded-lg text-base ${
-                  pathname === "/start"
-                    ? "bg-[#7A7FEE]/10 text-[#7A7FEE]"
-                    : "text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
-                }`}
+                className={`flex items-center py-3 px-4 rounded-lg text-base ${pathname === "/start"
+                  ? "bg-[#71717A]/10 text-[#71717A]"
+                  : "text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
+                  }`}
                 onClick={onClose}
               >
                 Start Project
@@ -237,13 +223,15 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         </nav>
 
         <div className="p-4 mt-4 border-t border-gray-200 dark:border-gray-800">
-          <Link
-            href="/contact"
-            className="flex items-center justify-center w-full py-3 px-4 bg-[#7A7FEE] text-white rounded-lg text-base font-medium hover:bg-opacity-90 transition-colors"
+          <a
+            href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1Xc85iwZucYTLiOkoZBKlGsKtCvXCEA0I7TEjy91w6oOMfYfMWNm_fgqhJtdlw7pJ8gf9bRJ8T?gv=true"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center w-full py-3 px-4 bg-[#71717A] text-white rounded-lg text-base font-medium hover:bg-opacity-90 transition-colors"
             onClick={onClose}
           >
             Contact Us
-          </Link>
+          </a>
         </div>
       </div>
     </div>

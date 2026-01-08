@@ -53,7 +53,7 @@ export default function ProjectForm() {
                   value={formData.firstName}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-3 bg-[#4a4a4a] border border-[#5a5a5a] rounded-lg text-white text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#7A7FEE] focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 bg-[#4a4a4a] border border-[#5a5a5a] rounded-lg text-white text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#71717A] focus:border-transparent transition-all"
                   placeholder=""
                 />
                 {/* Small indicator icon */}
@@ -79,7 +79,7 @@ export default function ProjectForm() {
                 value={formData.lastName}
                 onChange={handleInputChange}
                 required
-                className="w-full px-4 py-3 bg-[#4a4a4a] border border-[#5a5a5a] rounded-lg text-white text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#7A7FEE] focus:border-transparent transition-all"
+                className="w-full px-4 py-3 bg-[#4a4a4a] border border-[#5a5a5a] rounded-lg text-white text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#71717A] focus:border-transparent transition-all"
                 placeholder=""
               />
             </div>
@@ -96,7 +96,7 @@ export default function ProjectForm() {
                 value={formData.email}
                 onChange={handleInputChange}
                 required
-                className="w-full px-4 py-3 bg-[#4a4a4a] border border-[#5a5a5a] rounded-lg text-white text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#7A7FEE] focus:border-transparent transition-all"
+                className="w-full px-4 py-3 bg-[#4a4a4a] border border-[#5a5a5a] rounded-lg text-white text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#71717A] focus:border-transparent transition-all"
                 placeholder=""
               />
             </div>
@@ -112,7 +112,7 @@ export default function ProjectForm() {
                 name="phone"
                 value={formData.phone}
                 onChange={handleInputChange}
-                className="w-full px-4 py-3 bg-[#4a4a4a] border border-[#5a5a5a] rounded-lg text-white text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#7A7FEE] focus:border-transparent transition-all"
+                className="w-full px-4 py-3 bg-[#4a4a4a] border border-[#5a5a5a] rounded-lg text-white text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#71717A] focus:border-transparent transition-all"
                 placeholder=""
               />
             </div>
@@ -122,7 +122,7 @@ export default function ProjectForm() {
               <button
                 type="button"
                 disabled
-                className="inline-flex items-center gap-2 px-6 py-3 bg-[#7A7FEE] text-white rounded-lg text-sm font-medium opacity-50 cursor-not-allowed transition-all"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#71717A] text-white rounded-lg text-sm font-medium opacity-50 cursor-not-allowed transition-all"
               >
                 Next
                 <ArrowRight className="w-4 h-4" />

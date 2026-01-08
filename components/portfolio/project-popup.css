@@ -20,7 +20,7 @@
 }
 
 .custom-content a {
-  color: #7a7fee;
+  color: #71717A;
 }
 
 .custom-content a:hover {
@@ -53,7 +53,7 @@
 }
 
 .custom-content blockquote {
-  border-left: 4px solid #7a7fee;
+  border-left: 4px solid #71717A;
   padding-left: 1rem;
   font-style: italic;
   margin: 1rem 0;

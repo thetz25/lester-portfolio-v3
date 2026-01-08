@@ -7,10 +7,12 @@ import CallToAction from "./call-to-action"
 import Footer from "./footer"
 import ContactFormButton from "./contact-form-button"
 import StartProject from "./start-project"
+import Stats from "./stats"
+import TechStack from "./tech-stack"
 import type { LandingPageProps } from "./types"
 
 // Export individual components for flexible usage
-export { Header, Hero, Projects, Services, Faq, CallToAction, Footer, ContactFormButton, StartProject }
+export { Header, Hero, Stats, TechStack, Projects, Services, Faq, CallToAction, Footer, ContactFormButton, StartProject }
 
 // Main component that combines all sections
 export default function LandingPage({ showHeader = true, showFooter = true }: LandingPageProps) {
@@ -19,6 +21,8 @@ export default function LandingPage({ showHeader = true, showFooter = true }: La
       {showHeader && <Header />}
       <div className="container pt-4">
         <Hero />
+        <Stats />
+        <TechStack />
         <Projects />
         <Services />
         <Faq />

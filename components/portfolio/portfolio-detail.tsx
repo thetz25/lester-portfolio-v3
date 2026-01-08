@@ -15,7 +15,7 @@ export default function PortfolioDetailPage({ project }: PortfolioDetailPageProp
     <main className="min-h-screen bg-white dark:bg-[#111111]">
       <Header />
       <div className="container py-12">
-        <Link href="/portfolio" className="inline-flex items-center text-gray-400 hover:text-[#7A7FEE] mb-8">
+        <Link href="/portfolio" className="inline-flex items-center text-gray-400 hover:text-[#71717A] mb-8">
           <ArrowLeft className="w-4 h-4 mr-2" />
           Back to Portfolio
         </Link>
@@ -63,7 +63,7 @@ export default function PortfolioDetailPage({ project }: PortfolioDetailPageProp
                   href={project.projectUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 w-full py-3 px-4 bg-[#7A7FEE] text-white rounded-lg text-base font-medium hover:bg-opacity-90 transition-colors"
+                  className="flex items-center justify-center gap-2 w-full py-3 px-4 bg-[#71717A] text-white rounded-lg text-base font-medium hover:bg-opacity-90 transition-colors"
                 >
                   Visit Project
                   <ExternalLink className="w-4 h-4" />

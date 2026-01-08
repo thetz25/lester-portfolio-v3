@@ -112,7 +112,7 @@ export default function ProjectPopup({ project, onClose }: ProjectPopupProps) {
                 href={project.projectUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-2.5 bg-[#7A7FEE] text-white rounded-md hover:bg-opacity-90 transition-all text-sm font-medium shadow-sm"
+                className="inline-flex items-center gap-2 px-6 py-2.5 bg-[#71717A] text-white rounded-md hover:bg-opacity-90 transition-all text-sm font-medium shadow-sm"
               >
                 Visit Project
                 <ExternalLink className="w-4 h-4" />
@@ -120,7 +120,7 @@ export default function ProjectPopup({ project, onClose }: ProjectPopupProps) {
             )}
             <Link
               href={`/portfolio/${project.slug}`}
-              className="inline-flex items-center text-gray-700 dark:text-gray-300 hover:text-[#7A7FEE] dark:hover:text-[#7A7FEE] text-sm font-medium"
+              className="inline-flex items-center text-gray-700 dark:text-gray-300 hover:text-[#71717A] dark:hover:text-[#71717A] text-sm font-medium"
               onClick={onClose}
             >
               View Full Case Study

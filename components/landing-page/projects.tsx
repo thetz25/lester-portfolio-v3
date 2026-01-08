@@ -41,51 +41,51 @@ export default function Projects() {
   return (
     <section id="projects" className="my-20">
       <h2 className="text-black dark:text-white mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
-        Explore Our
-        <span className="block text-[#7A7FEE] dark:text-[#7A7FEE]">Latest Projects</span>
+        Explore my
+        <span className="block text-[#71717A] dark:text-[#71717A]">Latest Projects</span>
       </h2>
       <p className="mb-12 max-w-2xl text-gray-700 dark:text-gray-300">
-        From AI-driven automation to custom marketplaces, our work helps businesses scale smarter. Explore some of the
-        platforms, tools, and solutions we've created for our clients and ourselves.
+        Explore my latest projects and case studies. From AI-driven automation to custom webapps, I
+        help businesses scale smarter.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {isLoading
           ? // Loading skeleton
-            Array.from({ length: 3 }).map((_, index) => (
-              <div key={`skeleton-${index}`} className="card overflow-hidden shadow-lg animate-pulse">
-                <div className="h-48 bg-gray-200 dark:bg-gray-700"></div>
-                <div className="p-4">
-                  <div className="h-6 w-2/3 bg-gray-200 dark:bg-gray-700 rounded mb-2"></div>
-                  <div className="h-4 w-full bg-gray-200 dark:bg-gray-700 rounded"></div>
-                </div>
+          Array.from({ length: 3 }).map((_, index) => (
+            <div key={`skeleton-${index}`} className="card overflow-hidden shadow-lg animate-pulse">
+              <div className="h-48 bg-gray-200 dark:bg-gray-700"></div>
+              <div className="p-4">
+                <div className="h-6 w-2/3 bg-gray-200 dark:bg-gray-700 rounded mb-2"></div>
+                <div className="h-4 w-full bg-gray-200 dark:bg-gray-700 rounded"></div>
               </div>
-            ))
+            </div>
+          ))
           : projects.map((project) => (
-              <div
-                key={project.slug}
-                className="card overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-[1.02] cursor-pointer"
-                onClick={() => openProjectPopup(project)}
-              >
-                <div className="relative overflow-hidden">
-                  <Image
-                    src={project.mainImage || "/placeholder.svg?height=600&width=800&query=project"}
-                    alt={project.title}
-                    width={600}
-                    height={400}
-                    className="w-full h-48 object-cover"
-                  />
-                </div>
-                <div className="p-4 md:p-6">
-                  <h3 className="text-xl font-semibold text-black dark:text-white">{project.title}</h3>
-                  <p className="text-gray-700 dark:text-gray-300 text-sm mt-1 mb-4">{project.shortDescription}</p>
-                  <div className="inline-flex items-center text-[#7A7FEE] text-sm font-medium group">
-                    View Project{" "}
-                    <ArrowUpRight className="w-4 h-4 ml-1 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                  </div>
+            <div
+              key={project.slug}
+              className="card overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-[1.02] cursor-pointer"
+              onClick={() => openProjectPopup(project)}
+            >
+              <div className="relative overflow-hidden">
+                <Image
+                  src={project.mainImage || "/placeholder.svg?height=600&width=800&query=project"}
+                  alt={project.title}
+                  width={600}
+                  height={400}
+                  className="w-full h-48 object-cover"
+                />
+              </div>
+              <div className="p-4 md:p-6">
+                <h3 className="text-xl font-semibold text-black dark:text-white">{project.title}</h3>
+                <p className="text-gray-700 dark:text-gray-300 text-sm mt-1 mb-4">{project.shortDescription}</p>
+                <div className="inline-flex items-center text-[#71717A] text-sm font-medium group">
+                  View Project{" "}
+                  <ArrowUpRight className="w-4 h-4 ml-1 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                 </div>
               </div>
-            ))}
+            </div>
+          ))}
       </div>
 
       <div className="flex justify-center mt-8">

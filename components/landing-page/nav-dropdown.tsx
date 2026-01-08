@@ -147,16 +147,15 @@ export default function NavDropdown({
       <button
         ref={triggerRef}
         onClick={toggleDropdown}
-        className={`flex items-center gap-1 transition-colors ${
-          isOpen
-            ? "text-[#7A7FEE] dark:text-[#7A7FEE]"
-            : "text-black dark:text-white hover:text-[#7A7FEE] dark:hover:text-[#7A7FEE]"
-        }`}
+        className={`flex items-center gap-1 transition-colors ${isOpen
+          ? "text-[#71717A] dark:text-[#71717A]"
+          : "text-black dark:text-white hover:text-[#71717A] dark:hover:text-[#71717A]"
+          }`}
         aria-expanded={isOpen}
         aria-haspopup="true"
       >
         {trigger}
-        <ChevronDown className={`w-4 h-4 transition-transform ${isOpen ? "rotate-180 text-[#7A7FEE]" : ""}`} />
+        <ChevronDown className={`w-4 h-4 transition-transform ${isOpen ? "rotate-180 text-[#71717A]" : ""}`} />
       </button>
 
       <AnimatePresence>
@@ -194,9 +193,8 @@ export default function NavDropdown({
                         rel="noopener noreferrer"
                       >
                         <div
-                          className={`flex-shrink-0 w-10 h-10 rounded-md flex items-center justify-center ${
-                            item.color || "bg-gray-100 dark:bg-gray-800"
-                          } shadow-sm group-hover:shadow-md transition-all duration-200`}
+                          className={`flex-shrink-0 w-10 h-10 rounded-md flex items-center justify-center ${item.color || "bg-gray-100 dark:bg-gray-800"
+                            } shadow-sm group-hover:shadow-md transition-all duration-200`}
                         >
                           {typeof item.icon === "string" ? (
                             <Image
@@ -212,10 +210,10 @@ export default function NavDropdown({
                         </div>
                         <div className="flex-1">
                           <div className="flex items-center">
-                            <h3 className="text-sm font-medium text-gray-900 dark:text-white group-hover:text-[#7A7FEE] dark:group-hover:text-[#7A7FEE] transition-colors duration-200">
+                            <h3 className="text-sm font-medium text-gray-900 dark:text-white group-hover:text-[#71717A] dark:group-hover:text-[#71717A] transition-colors duration-200">
                               {item.title}
                             </h3>
-                            <ExternalLink className="w-3.5 h-3.5 ml-1.5 text-gray-400 group-hover:text-[#7A7FEE]" />
+                            <ExternalLink className="w-3.5 h-3.5 ml-1.5 text-gray-400 group-hover:text-[#71717A]" />
                           </div>
                           {item.description && (
                             <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">{item.description}</p>
@@ -225,9 +223,8 @@ export default function NavDropdown({
                     ) : (
                       <Link href={item.href} className="flex items-start gap-3 group" onClick={closeDropdown}>
                         <div
-                          className={`flex-shrink-0 w-10 h-10 rounded-md flex items-center justify-center ${
-                            item.color || "bg-gray-100 dark:bg-gray-800"
-                          } shadow-sm group-hover:shadow-md transition-all duration-200`}
+                          className={`flex-shrink-0 w-10 h-10 rounded-md flex items-center justify-center ${item.color || "bg-gray-100 dark:bg-gray-800"
+                            } shadow-sm group-hover:shadow-md transition-all duration-200`}
                         >
                           {typeof item.icon === "string" ? (
                             <Image
@@ -242,7 +239,7 @@ export default function NavDropdown({
                           ) : null}
                         </div>
                         <div>
-                          <h3 className="text-sm font-medium text-gray-900 dark:text-white group-hover:text-[#7A7FEE] dark:group-hover:text-[#7A7FEE] transition-colors duration-200">
+                          <h3 className="text-sm font-medium text-gray-900 dark:text-white group-hover:text-[#71717A] dark:group-hover:text-[#71717A] transition-colors duration-200">
                             {item.title}
                           </h3>
                           {item.description && (

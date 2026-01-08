@@ -21,24 +21,16 @@ export default function Footer() {
     <footer className="container py-8 border-t border-gray-200 dark:border-gray-800">
       <div className="flex flex-col items-center text-center">
         <Link href="/" className="flex items-center justify-center mb-4">
-          {mounted ? (
-            <Image
-              src={logoSrc || "/placeholder.svg"}
-              alt="Automatic Logo"
-              width={200}
-              height={50}
-              className="h-12 w-auto"
-            />
-          ) : (
-            <div className="h-12 w-[200px]" />
-          )}
+          <span className="text-xl md:text-2xl font-bold text-black dark:text-white tracking-tight">
+            Lester<span className="text-[#71717A]">Borillo</span>
+          </span>
         </Link>
         <p className="text-sm text-gray-600 dark:text-gray-400 max-w-md mx-auto mb-8">
           Your AI-first development partner building high-quality, scalable platforms.
         </p>
 
         <p className="text-sm text-gray-500 dark:text-gray-400">
-          © {new Date().getFullYear()} Automatic. All rights reserved.
+          © {new Date().getFullYear()} LesterBorillo. All rights reserved.
         </p>
       </div>
     </footer>

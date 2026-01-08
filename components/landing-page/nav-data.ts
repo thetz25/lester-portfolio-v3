@@ -24,7 +24,7 @@ export const resourcesDropdownData: SubNavItem[][] = [
     {
       title: "Contact Us",
       description: "Get in touch with our team",
-      href: "https://x.com/David__Flynn",
+      href: "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1Xc85iwZucYTLiOkoZBKlGsKtCvXCEA0I7TEjy91w6oOMfYfMWNm_fgqhJtdlw7pJ8gf9bRJ8T?gv=true",
       icon: MessageSquare,
       color: iconColors.resources.community,
       external: true,

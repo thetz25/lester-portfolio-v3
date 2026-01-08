@@ -15,14 +15,14 @@ const outfit = Outfit({
 })
 
 export const metadata: Metadata = {
-  title: "Automatic - Your AI-first Development Partner",
+  title: "LesterBorillo - Building Smart AI and Automation Solutions",
   description:
-    "We build high-quality, scalable platforms—client portals, marketplaces, AI automations, and SaaS—using the best tools for the job, no shortcuts.",
+    "We design automation and web solutions that streamline operations and drive growth",
   icons: {
     icon: [{ url: "/automatic-favicon-no-bg.png", type: "image/png" }],
     apple: [{ url: "/automatic-favicon-no-bg.png" }],
   },
-    generator: 'v0.app'
+  generator: 'v0.app'
 }
 
 export default function RootLayout({

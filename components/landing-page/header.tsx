@@ -60,26 +60,15 @@ export default function Header() {
   return (
     <>
       <header
-        className={`sticky top-0 z-40 w-full transition-all duration-200 ${
-          isScrolled ? "bg-white/90 dark:bg-[#111111]/90 backdrop-blur-sm shadow-sm" : "bg-transparent"
-        }`}
+        className={`sticky top-0 z-40 w-full transition-all duration-200 ${isScrolled ? "bg-white/90 dark:bg-[#111111]/90 backdrop-blur-sm shadow-sm" : "bg-transparent"
+          }`}
       >
         <div className="container py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center" onClick={handleLogoClick}>
-              {/* Use a div with the same dimensions during SSR to prevent layout shift */}
-              {mounted ? (
-                <Image
-                  src={logoSrc || "/placeholder.svg"}
-                  alt="Automatic Logo"
-                  width={200}
-                  height={50}
-                  className="h-12 w-auto"
-                  priority
-                />
-              ) : (
-                <div className="h-12 w-[200px]" />
-              )}
+              <span className="text-xl md:text-2xl font-bold text-black dark:text-white tracking-tight">
+                Lester<span className="text-[#71717A]">Borillo</span>
+              </span>
             </Link>
 
             <div className="flex items-center space-x-4">
@@ -91,17 +80,16 @@ export default function Header() {
                       trigger="Resources"
                       items={resourcesDropdownData}
                       columns={2}
-                      className={pathname.startsWith("/resources") ? "text-[#7A7FEE] dark:text-[#7A7FEE]" : ""}
+                      className={pathname.startsWith("/resources") ? "text-[#71717A] dark:text-[#71717A]" : ""}
                     />
                   </li>
                   <li>
                     <Link
                       href="/portfolio"
-                      className={`transition-colors ${
-                        pathname === "/portfolio"
-                          ? "text-[#7A7FEE] dark:text-[#7A7FEE]"
-                          : "text-black dark:text-white hover:text-[#7A7FEE] dark:hover:text-[#7A7FEE]"
-                      }`}
+                      className={`transition-colors ${pathname === "/portfolio"
+                        ? "text-[#71717A] dark:text-[#71717A]"
+                        : "text-black dark:text-white hover:text-[#71717A] dark:hover:text-[#71717A]"
+                        }`}
                     >
                       Portfolio
                     </Link>
@@ -109,11 +97,10 @@ export default function Header() {
                   <li>
                     <Link
                       href="/start"
-                      className={`transition-colors ${
-                        pathname === "/start"
-                          ? "text-[#7A7FEE] dark:text-[#7A7FEE]"
-                          : "text-black dark:text-white hover:text-[#7A7FEE] dark:hover:text-[#7A7FEE]"
-                      }`}
+                      className={`transition-colors ${pathname === "/start"
+                        ? "text-[#71717A] dark:text-[#71717A]"
+                        : "text-black dark:text-white hover:text-[#71717A] dark:hover:text-[#71717A]"
+                        }`}
                     >
                       Start Project
                     </Link>

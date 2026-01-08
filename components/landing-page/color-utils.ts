@@ -1,39 +1,39 @@
 // Brand color palette
 export const brandColors = {
-  primary: "#7A7FEE", // Main purple/blue
-  secondary: "#FF6B8B", // Pink/red accent
-  tertiary: "#50C4ED", // Light blue accent
-  quaternary: "#FFB347", // Orange accent
+  primary: "#71717A", // Zinc-500
+  secondary: "#94A3B8", // Slate-400
+  tertiary: "#CBD5E1", // Slate-300
+  quaternary: "#475569", // Slate-600
   success: "#4CAF50", // Green
   warning: "#FFC107", // Yellow/amber
-  info: "#2196F3", // Blue
+  info: "#64748B", // Slate-500
   dark: "#272829", // Dark background
 }
 
 // Icon background colors for different categories
 export const iconColors = {
   projects: {
-    clientPortals: "bg-gradient-to-br from-[#7A7FEE] to-[#9D7FEE]",
-    marketplaces: "bg-gradient-to-br from-[#FF6B8B] to-[#FF8E8B]",
-    saas: "bg-gradient-to-br from-[#50C4ED] to-[#7A7FEE]",
-    ai: "bg-gradient-to-br from-[#9D7FEE] to-[#C77FEE]",
-    mobile: "bg-gradient-to-br from-[#FF8E8B] to-[#FFB347]",
-    web: "bg-gradient-to-br from-[#7A7FEE] to-[#50C4ED]",
+    clientPortals: "bg-gradient-to-br from-[#71717A] to-[#52525B]",
+    marketplaces: "bg-gradient-to-br from-[#94A3B8] to-[#64748B]",
+    saas: "bg-gradient-to-br from-[#CBD5E1] to-[#94A3B8]",
+    ai: "bg-gradient-to-br from-[#52525B] to-[#3F3F46]",
+    mobile: "bg-gradient-to-br from-[#64748B] to-[#475569]",
+    web: "bg-gradient-to-br from-[#71717A] to-[#94A3B8]",
   },
   resources: {
-    blog: "bg-gradient-to-br from-[#50C4ED] to-[#7A7FEE]",
-    caseStudies: "bg-gradient-to-br from-[#7A7FEE] to-[#9D7FEE]",
-    documentation: "bg-gradient-to-br from-[#FFB347] to-[#FF8E8B]",
-    api: "bg-gradient-to-br from-[#9D7FEE] to-[#C77FEE]",
-    tutorials: "bg-gradient-to-br from-[#FF6B8B] to-[#FF8E8B]",
-    community: "bg-gradient-to-br from-[#7A7FEE] to-[#50C4ED]",
+    blog: "bg-gradient-to-br from-[#CBD5E1] to-[#94A3B8]",
+    caseStudies: "bg-gradient-to-br from-[#71717A] to-[#52525B]",
+    documentation: "bg-gradient-to-br from-[#475569] to-[#64748B]",
+    api: "bg-gradient-to-br from-[#52525B] to-[#3F3F46]",
+    tutorials: "bg-gradient-to-br from-[#94A3B8] to-[#64748B]",
+    community: "bg-gradient-to-br from-[#71717A] to-[#94A3B8]",
   },
   services: {
-    development: "bg-gradient-to-br from-[#7A7FEE] to-[#9D7FEE]",
-    ai: "bg-gradient-to-br from-[#9D7FEE] to-[#C77FEE]",
-    design: "bg-gradient-to-br from-[#FF6B8B] to-[#FF8E8B]",
-    devops: "bg-gradient-to-br from-[#50C4ED] to-[#7A7FEE]",
-    performance: "bg-gradient-to-br from-[#FFB347] to-[#FF8E8B]",
-    analytics: "bg-gradient-to-br from-[#7A7FEE] to-[#50C4ED]",
+    development: "bg-gradient-to-br from-[#71717A] to-[#52525B]",
+    ai: "bg-gradient-to-br from-[#52525B] to-[#3F3F46]",
+    design: "bg-gradient-to-br from-[#94A3B8] to-[#64748B]",
+    devops: "bg-gradient-to-br from-[#CBD5E1] to-[#94A3B8]",
+    performance: "bg-gradient-to-br from-[#475569] to-[#64748B]",
+    analytics: "bg-gradient-to-br from-[#71717A] to-[#94A3B8]",
   },
 }

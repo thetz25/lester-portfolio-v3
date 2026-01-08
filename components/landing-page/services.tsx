@@ -6,21 +6,21 @@ const services = [
     title: "Discovery",
     description: "Share your project details and help us see your vision.",
     icon: CircleDot,
-    color: "bg-[#7A7FEE]",
+    color: "bg-[#71717A]",
   },
   {
     id: 2,
     title: "Build",
     description: "We craft scalable, reliable solutions using the best tools for the job.",
     icon: Layers,
-    color: "bg-[#7A7FEE]",
+    color: "bg-[#71717A]",
   },
   {
     id: 3,
     title: "Launch + Iterate",
     description: "Seamlessly integrate, optimize, and expand as your business evolves.",
     icon: Rocket,
-    color: "bg-[#7A7FEE]",
+    color: "bg-[#71717A]",
   },
 ]
 
@@ -29,7 +29,7 @@ export default function Services() {
     <section id="services" className="my-20">
       <h2 className="text-black dark:text-white mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
         Unleash Your
-        <span className="block text-[#7A7FEE] dark:text-[#7A7FEE]">Business</span>
+        <span className="block text-[#71717A] dark:text-[#71717A]">Business</span>
       </h2>
       <p className="mb-12 max-w-2xl text-gray-700 dark:text-gray-300">
         We build custom platforms and AI-powered tools to simplify your operations and help you scale. Our process makes

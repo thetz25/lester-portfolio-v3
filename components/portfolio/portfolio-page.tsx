@@ -34,11 +34,11 @@ export default function PortfolioPage({ initialData }: PortfolioPageProps) {
       <div className="container pt-8 pb-20">
         <div className="mb-12">
           <h1 className="text-4xl md:text-5xl font-medium text-black dark:text-white mb-4">
-            Our <span className="text-[#7A7FEE]">Portfolio</span>
+            Our <span className="text-[#71717A]">Portfolio</span>
           </h1>
           <p className="text-gray-700 dark:text-gray-300 max-w-2xl">
-            Explore our latest projects and case studies. From AI-driven automation to custom marketplaces, our work
-            helps businesses scale smarter.
+            Explore my latest projects and case studies. From AI-driven automation to custom webapps, I
+            help businesses scale smarter.
           </p>
         </div>
 

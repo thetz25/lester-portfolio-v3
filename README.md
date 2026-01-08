@@ -1,4 +1,4 @@
-# Automatic - AI-First Development Agency Landing Page
+# LesterBorillo - Portfolio
 
 A modern, professional landing page template for development agencies and tech consultancies built with Next.js 14, TypeScript, and Tailwind CSS.
 

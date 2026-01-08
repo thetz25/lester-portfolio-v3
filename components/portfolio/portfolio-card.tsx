@@ -31,7 +31,7 @@ export default function PortfolioCard({ item }: PortfolioCardProps) {
         <div className="p-4 md:p-6 flex flex-col flex-grow">
           <h3 className="font-medium text-gray-900 dark:text-white text-lg mb-2">{item.title}</h3>
           <p className="text-sm text-gray-700 dark:text-gray-300 mb-4">{item.shortDescription}</p>
-          <div className="inline-flex items-center text-[#7A7FEE] hover:underline text-sm font-medium mt-auto">
+          <div className="inline-flex items-center text-[#71717A] hover:underline text-sm font-medium mt-auto">
             View Project <ArrowUpRight className="w-4 h-4 ml-1" />
           </div>
         </div>
