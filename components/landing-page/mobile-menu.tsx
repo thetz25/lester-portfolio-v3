@@ -208,16 +208,15 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             </li>
 
             <li>
-              <Link
-                href="/start"
-                className={`flex items-center py-3 px-4 rounded-lg text-base ${pathname === "/start"
-                  ? "bg-[#71717A]/10 text-[#71717A]"
-                  : "text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
-                  }`}
+              <a
+                href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1Xc85iwZucYTLiOkoZBKlGsKtCvXCEA0I7TEjy91w6oOMfYfMWNm_fgqhJtdlw7pJ8gf9bRJ8T?gv=true"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center py-3 px-4 rounded-lg text-base text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
                 onClick={onClose}
               >
                 Start Project
-              </Link>
+              </a>
             </li>
           </ul>
         </nav>

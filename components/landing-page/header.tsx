@@ -95,15 +95,14 @@ export default function Header() {
                     </Link>
                   </li>
                   <li>
-                    <Link
-                      href="/start"
-                      className={`transition-colors ${pathname === "/start"
-                        ? "text-[#71717A] dark:text-[#71717A]"
-                        : "text-black dark:text-white hover:text-[#71717A] dark:hover:text-[#71717A]"
-                        }`}
+                    <a
+                      href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1Xc85iwZucYTLiOkoZBKlGsKtCvXCEA0I7TEjy91w6oOMfYfMWNm_fgqhJtdlw7pJ8gf9bRJ8T?gv=true"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-black dark:text-white hover:text-[#71717A] dark:hover:text-[#71717A] transition-colors"
                     >
                       Start Project
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </nav>
