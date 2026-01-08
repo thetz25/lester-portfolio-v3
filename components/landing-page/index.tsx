@@ -23,8 +23,8 @@ export default function LandingPage({ showHeader = true, showFooter = true }: La
         <Hero />
         <Stats />
         <TechStack />
-        <Projects />
         <Services />
+        <Projects />
         <Faq />
         <CallToAction />
       </div>

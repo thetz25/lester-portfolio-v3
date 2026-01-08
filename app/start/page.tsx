@@ -4,7 +4,7 @@ import Footer from "@/components/landing-page/footer"
 
 export const metadata = {
   title: "Start Your Project | LesterBorillo",
-  description: "Get started with your next project by answering a few questions and scheduling a call with our team.",
+  description: "Get started with your next project by answering a few questions and scheduling a call with me.",
 }
 
 export default function StartPage() {

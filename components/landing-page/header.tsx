@@ -75,14 +75,6 @@ export default function Header() {
               {/* Desktop Navigation */}
               <nav className="hidden md:block">
                 <ul className="flex space-x-6">
-                  <li className="hidden md:block">
-                    <NavDropdown
-                      trigger="Resources"
-                      items={resourcesDropdownData}
-                      columns={2}
-                      className={pathname.startsWith("/resources") ? "text-[#71717A] dark:text-[#71717A]" : ""}
-                    />
-                  </li>
                   <li>
                     <Link
                       href="/portfolio"
