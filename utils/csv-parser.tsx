@@ -19,7 +19,7 @@ export async function fetchPortfolioData(): Promise<PortfolioItem[]> {
   }
 
   try {
-    // Use local sample file as primary source for template
+    // Use local sample file as primary s ce for template
     const response = await fetch("/data/portfolio-sample.csv", {
       // Add cache: 'no-store' for server components to always fetch fresh data
       cache: typeof window === "undefined" ? "no-store" : "default",
@@ -34,7 +34,7 @@ export async function fetchPortfolioData(): Promise<PortfolioItem[]> {
 
     // Cache the data on the client side
     if (typeof window !== "undefined") {
-      ;(window as any).__portfolioCache = parsedData
+      ; (window as any).__portfolioCache = parsedData
     }
 
     return parsedData
@@ -49,15 +49,15 @@ export async function fetchPortfolioData(): Promise<PortfolioItem[]> {
 function getFallbackPortfolioData(): PortfolioItem[] {
   return [
     {
-      slug: "sample-saas-platform",
-      title: "TaskFlow Pro",
-      logo: "/taskflow-logo.jpg",
+      slug: "sagot-bot",
+      title: "SagotBot",
+      logo: "/sagotbot-logo.jpg",
       mainImage: "/portfolio-images/saas-dashboard-1.jpg",
-      shortDescription: "AI-powered task management platform for teams",
+      shortDescription: "Automated Customer Support Chatbot",
       projectUrl: "https://example.com",
-      content: `<h3>Project Overview</h3><p>TaskFlow Pro is a comprehensive task management platform that leverages AI to help teams prioritize work and optimize productivity. Built with modern web technologies, it features real-time collaboration, intelligent task suggestions, and advanced analytics.</p><h3>Key Features</h3><ul><li>AI-powered task prioritization</li><li>Real-time team collaboration</li><li>Advanced project analytics</li><li>Custom workflow automation</li><li>Mobile-responsive design</li></ul><h3>Technologies Used</h3><p>This project was built using React, Node.js, PostgreSQL, and OpenAI's API for intelligent task suggestions. The platform handles over 10,000 active users and processes millions of tasks monthly.</p>`,
+      content: `<h3>Automated Customer Support Chatbot</h3><h4>Problem</h4><p>Business received high volumes of messages requiring instant, context-aware responses 24/7, but manual replies were slow and inconsistent.</p><h4>Solution</h4><p>Built an n8n workflow using webhooks to receive messages, filter and retrieve relevant documents, then respond using AI with persistent memory for contextual conversations.</p><h4>Result</h4><p>Achieved 90% automated response rate with human-like conversations, reducing response time from hours to seconds.</p>`,
       sortOrder: "2024-01-15",
-      categories: ["all", "web", "ai"],
+      categories: ["all", "ai", "customer support"],
     },
     {
       slug: "ecommerce-marketplace",

@@ -96,7 +96,7 @@ export default function Header() {
                   </li>
                   <li>
                     <a
-                      href="/#hero"
+                      href="/#about"
                       className="text-black dark:text-white hover:text-[#71717A] dark:hover:text-[#71717A] transition-colors"
                     >
                       About Me
